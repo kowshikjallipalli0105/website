@@ -1,0 +1,271 @@
+body{
+    background-color: black;
+}
+#na{
+    width: 100%;
+    height: 80px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    box-shadow: 1px 1px 5px rgb(238, 236, 236);
+    z-index: 1;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+a:\-webkit-any-link {   
+     color: -webkit-link;
+    cursor: pointer;    
+    text-decoration: underline;
+}
+.menu li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8en;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.con{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.me{
+width: 500px;
+height: 400px;
+}
+.me h1{
+    font-size: 3.5em;    
+    color: hsl(59, 72%, 50%);    
+    margin: 0px 0px 10px 0px;    
+    line-height: 60px;
+    width: 500px;
+
+}
+.t {
+    overflow: hidden;
+    border-right: 0.15em solid rgb(20, 16, 10);
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+    /* font-size: 1.6rem; */
+    width: 0;
+}
+.me p{
+    color: white;
+}
+.resume-btn {
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1db096;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.02);
+    text-decoration: none;
+}
+
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #40B3A2;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+}
+.skill{
+    display: flex;
+    width: 90%;
+    height: 50px;
+    top: 300px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.skill1{
+    display: flex;
+    width: 90%;
+    height: 50px;
+    top: 600px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.skill2{
+    display: flex;
+    width: 90%;
+    height: 50px;
+    top: 900px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.flip-card {
+    float: left;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.b1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.b2{
+    position: relative;
+    top: 0;
+    left: auto;
+}
+.b3{
+    position: relative;
+    top: 0;
+    left: auto;
+}
+.b4{
+    position: relative;
+    top: 1;
+    left: auto;
+}
+.b5{
+    position: relative;
+    top: 1;
+    left: auto;
+}
+.b6{
+    position: relative;
+    top: 1;
+    left: auto;
+}
+.b7{
+    position: relative;
+    top: 2;
+    left: auto;
+}
+.flip-card-inner {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card-front {
+    float: left;
+    background-color: #bbb;
+    color: black;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+.flip-card-front, .flip-card-back {
+    float: left;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    float: left;
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+.contact {
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 0%;
+    padding: 0px;
+    color: white;
+}
+label {
+    cursor: default;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+#fname, #lname, #email, #ph {
+    margin: 10px;
+    margin-left: 0%;
+    padding: 5px;
+    width: 75%;
+    border-radius: 5px;
+    border-color: #73a6cd;
+}
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
